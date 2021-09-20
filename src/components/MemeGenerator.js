@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const MemeGenerator = () => {
   const [inputText, setInputText] = useState({
@@ -46,14 +46,12 @@ const MemeGenerator = () => {
     <div className="meme-container">
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
           name="topText"
           placeholder="Add Top Text"
           value={inputText.topText}
           onChange={handleChange}
         />
         <input
-          type="text"
           name="bottomText"
           placeholder="Add Bottom Text"
           value={inputText.bottomText}
